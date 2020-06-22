@@ -1,0 +1,8 @@
+@mixin menu-item-a {
+	font-weight: 600;
+	padding: rem-calc(15px 20px);
+	display: block;
+	color: #fff;
+	border-left: 1px solid #222;
+	font-size: rem-calc(14px);
+}

@@ -1,0 +1,154 @@
+.header-nav .menu {
+	margin: 0;
+	display: flex;
+	list-style: none;
+
+	.menu-button {
+		padding: 0;
+		background-color: transparent;
+		color: inherit;
+		margin-left: rem-calc(10px);
+	}
+
+	>.menu-item {
+		margin: 0;
+
+		>a {
+			@include menu-item-a;
+			border-bottom: none;
+		}
+
+		&:hover a,
+		&.open>a {
+			background: $dark-grey;
+			color: $hover-menu;
+		}
+
+		>.sub-menu {
+			position: absolute;
+			margin: 0;
+			list-style: none;
+			background: $dark-grey;
+			display: none;
+			min-width: 200px;
+			border: 1px solid $hover-menu;
+			border-top-color: #fff;
+			z-index: 10;
+		}
+	}
+
+	>.menu-item:not(.mega) {
+		.sub-menu {
+			.sub-menu {
+				position: absolute;
+				margin: 0;
+				list-style: none;
+				background: $dark-grey;
+				display: none;
+				min-width: 200px;
+				left: 100%;
+				font-size: 100%;
+				top: 0px;
+				border-top-color: #efefef;
+			}
+
+			.menu-item {
+				margin: 0;
+				position: relative;
+
+				a {
+					@include menu-item-a;
+					border-bottom: 1px solid #efefef;
+				}
+
+				&:hover>a {
+					background-color: $dark-grey;
+					color: $hover-menu;
+				}
+			}
+		}
+	}
+
+	.menu-item:not(.mega).open>.sub-menu {
+		display: block !important;
+	}
+
+	.menu-item.mega.open>.sub-menu {
+		display: flex !important;
+	}
+
+	>.menu-item.mega {
+		margin: 0;
+
+		>.sub-menu {
+			width: 100%;
+			left: 0;
+			flex-wrap: wrap;
+			border: 1px solid #efefef;
+			border-top-color: #fff;
+
+			>.menu-item>a {
+				font-weight: 600;
+				font-size: rem-calc(16px);
+				border-bottom: none;
+				color: #000000;
+				display: inline-block;
+				margin-bottom: rem-calc(5);
+
+				button {
+					display: none
+				}
+
+				&:hover {
+					color: $hover-menu;
+				}
+			}
+
+			>.menu-item>.sub-menu {
+				margin: 0;
+
+				a {
+					border-bottom: none;
+					font-size: rem-calc(14px);
+					color: $dark-grey;
+
+					&:hover {
+						color: $hover-menu;
+					}
+				}
+			}
+		}
+
+		@for $i from 1 through 6 {
+			&.cols-#{$i} {
+				>.sub-menu>.menu-item {
+					width: #{1/$i*100 + '%'};
+					padding: rem-calc(20px);
+				}
+			}
+		}
+	}
+}
+
+.c-navigation {
+	background-color: $dark-grey;
+	color: #ffffff;
+
+	nav {
+		position: relative;
+	}
+}
+
+.c-header {
+	background-color: #222222;
+	padding: rem-calc(60) 0;
+	color: #ffffff;
+
+	&__logo {
+		font-size: rem-calc(28);
+
+		img {
+			max-width: 200px;
+		}
+	}
+}
