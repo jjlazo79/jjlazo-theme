@@ -8,6 +8,7 @@
 @import './tools/breakpoint';
 
 @import './generic/normalize';
+@import './generic/dark-theme';
 @import './generic/box-sizing';
 
 @import './elements/general';
@@ -31,6 +32,7 @@ $fa-font-path: '../../../node_modules/@fortawesome/fontawesome-free/webfonts';
 @import './components/header';
 @import './components/comment';
 @import './components/search-form';
+@import './components/switchers';
 @import './components/nav-links';
 
 @import './utils/helpers';

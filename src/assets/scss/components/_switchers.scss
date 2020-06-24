@@ -1,0 +1,13 @@
+.theme-mode {
+	background: none;
+
+	&:hover,
+	&:focus {
+		background: none;
+		color: $hover-menu;
+	}
+
+	.fa-sun {
+		display: none;
+	}
+}

@@ -1,0 +1,39 @@
+.dark {
+	background-color: $bg-dark-theme;
+	color: $typo-dark-theme;
+
+	.c-post {
+		background: $bg-dark-theme;
+		border: none;
+		color: $typo-dark-theme;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	.c-post__title,
+	.c-post__title>a,
+	.c-post__meta,
+	.c-post__excerpt {
+		color: $titles-dark-theme;
+	}
+
+	.theme-mode {
+		.fa-sun {
+			display: inline;
+		}
+
+		.fa-moon {
+			display: none;
+		}
+	}
+
+	a:not(.title) {
+		&:hover {
+			background-color: transparent;
+			color: $primary-colour-dim;
+		}
+	}
+}

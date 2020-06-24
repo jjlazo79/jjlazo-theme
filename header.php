@@ -11,18 +11,6 @@
 <body <?php body_class(); ?>>
 	<a class="u-skip-link" href="#content"><?php esc_attr_e('Skip to content', 'jjlazo'); ?></a>
 	<header role="banner" class="u-margin-bottom-40">
-		<!-- <div class="c-header">
-			<div class="o-container u-flex u-align-justify u-align-middle">
-				<div class="c-header__logo">
-					<?php if (has_custom_logo()) {
-						the_custom_logo();
-					} else { ?>
-						<a class="c-header__blogname" href="<?php echo esc_url(home_url('/')); ?>"><?php esc_html(bloginfo('name')); ?></a>
-					<?php } ?>
-				</div>
-				<?php get_search_form(true); ?>
-			</div>
-		</div> -->
 		<div class="c-navigation">
 			<div class="o-container">
 				<div class="o-container u-flex u-align-justify u-align-middle">
@@ -34,10 +22,14 @@
 						<?php } ?>
 					</div>
 					<?php get_search_form(true); ?>
+					<nav class="header-nav" role="navigation" aria-label="<?php esc_html_e('Main Navigation', 'jjlazo') ?>">
+						<?php wp_nav_menu(array('theme_location' => 'main-menu')) ?>
+					</nav>
+					<button class="theme-mode" aria-label="Toggle Theme Mode." title="Toggle Theme Mode">
+						<i class="fas fa-moon" aria-hidden="true" aria-label="<?php esc_html_e('Change dark mode', 'jjlazo') ?>"></i>
+						<i class="fas fa-sun" aria-hidden="true" aria-label="<?php esc_html_e('Change ligth mode', 'jjlazo') ?>"></i>
+					</button>
 				</div>
-				<nav class="header-nav" role="navigation" aria-label="<?php esc_html_e('Main Navigation', 'jjlazo') ?>">
-					<?php wp_nav_menu(array('theme_location' => 'main-menu')) ?>
-				</nav>
 			</div>
 		</div>
 	</header>

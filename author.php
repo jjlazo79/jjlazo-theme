@@ -1,17 +1,19 @@
 <?php get_header(); ?>
 <?php
-$author = get_query_var('author');
-$author_posts = count_user_posts($author);
-$author_display = get_the_author_meta('display_name', $author);
-$author_description = get_the_author_meta('user_description', $author);
-$author_website = get_the_author_meta('user_url', $author);
+$author				= get_query_var('author');
+$author_posts		= count_user_posts($author);
+$author_display		= get_the_author_meta('display_name', $author);
+$author_description	= get_the_author_meta('user_description', $author);
+$author_website		= get_the_author_meta('user_url', $author);
 ?>
 <div class="o-container u-margin-bottom-40">
 	<div class="o-row">
 
 		<div class="o-row__column o-row__column--span-12 o-row__column--span-4@medium">
 			<header>
-				<?php echo get_avatar($author, 128); ?>
+				<div class="c-post-author__avatar">
+					<?php echo get_avatar($author, 128); ?>
+				</div>
 				<h1 class="u-margin-top-20"><b><?php echo esc_html($author_display) ?></b></h1>
 				<div class="c-post-author__info">
 					<?php
