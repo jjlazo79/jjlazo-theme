@@ -7,7 +7,6 @@ import sourcemaps from "gulp-sourcemaps";
 import imagemin from "gulp-imagemin";
 import del from "del";
 import webpack from "webpack-stream";
-import uglify from "gulp-uglify";
 import named from "vinyl-named";
 import browserSync from "browser-sync";
 import zip from "gulp-zip";

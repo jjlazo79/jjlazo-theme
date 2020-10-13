@@ -2,8 +2,22 @@
 	background-color: $bg-dark-theme;
 	color: $typo-dark-theme;
 
-	.c-post {
-		background: $bg-dark-theme;
+	.c-navigation {
+		background-color: $bg-box-dark-theme;
+	}
+
+	.c-page {
+		background-color: $bg-box-dark-theme;
+		border: none;
+		box-shadow: none;
+		padding: rem-calc(20);
+		overflow: hidden;
+	}
+
+	.c-post,
+	.navigation.pagination .nav-links span:not(.dots):not(.current),
+	.navigation.pagination .nav-links a {
+		background: lighten($bg-dark-theme, 7%);
 		border: none;
 		color: $typo-dark-theme;
 	}
@@ -33,7 +47,21 @@
 	a:not(.title) {
 		&:hover {
 			background-color: transparent;
-			color: $primary-colour-dim;
+			color: $primary-color-dim;
 		}
+	}
+
+	.c-sidebar-widget,
+	.c-post__content .hcb_wrap pre.prism,
+	.c-post__content .hcb_wrap pre.prism code {
+		background-color: $bg-box-dark-theme;
+		border-radius: $border-radius;
+		border: none;
+	}
+
+	input,
+	textarea {
+		background-color: #24292e;
+		color: white;
 	}
 }

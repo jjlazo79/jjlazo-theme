@@ -1,16 +1,19 @@
-<?php if(have_posts()) { ?>
-    <?php while(have_posts()) { ?>
-        <?php the_post(); ?>
+<?php
+if (have_posts()) {
+	while (have_posts()) {
+		the_post();
 
-        <?php get_template_part( 'template-parts/page/content' ); ?>
-        
-        <?php 
-        if( comments_open() || get_comments_number()) {
-            comments_template();
-        }
-        ?>
+		if (is_front_page()) {
+			get_template_part('template-parts/frontpage/content');
+		} else {
+			get_template_part('template-parts/page/content');
+		}
 
-    <?php } ?>
-<?php } else { ?>
-    <?php get_template_part( 'template-parts/post/content', 'none' ); ?>
-<?php } ?>
+
+		if (comments_open() || get_comments_number()) {
+			comments_template();
+		}
+	}
+} else {
+	get_template_part('template-parts/post/content', 'none');
+}

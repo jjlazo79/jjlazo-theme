@@ -11,17 +11,6 @@ function jjlazo_filter_portfolio($args, $post_type)
 }
 
 add_action('customize_save_after', 'jjlazo_customize_save_after');
-
-add_action('init', 'jjlazo_flush_rewrite', 99999);
-
-function jjlazo_flush_rewrite()
-{
-	if (get_theme_mod('jjlazo_flush_flag', false)) {
-		flush_rewrite_rules();
-		set_theme_mod('jjlazo_flush_flag', false);
-	}
-}
-
 function jjlazo_customize_save_after()
 {
 	$old = get_post_type_object('jjlazo_portfolio')->rewrite['slug'];
@@ -30,3 +19,18 @@ function jjlazo_customize_save_after()
 		set_theme_mod('jjlazo_flush_flag', true);
 	}
 }
+
+add_action('init', 'jjlazo_flush_rewrite', 99999);
+function jjlazo_flush_rewrite()
+{
+	if (get_theme_mod('jjlazo_flush_flag', false)) {
+		flush_rewrite_rules();
+		set_theme_mod('jjlazo_flush_flag', false);
+	}
+}
+
+add_action('post_edit_form_tag', 'update_edit_form');
+function update_edit_form()
+{
+	echo ' enctype="multipart/form-data"';
+} // end update_edit_form

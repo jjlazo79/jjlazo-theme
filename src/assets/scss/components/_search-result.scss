@@ -1,0 +1,36 @@
+.c-search-result {
+	display: block;
+	float: right;
+	margin-top: rem-calc(15);
+	border-radius: 24px;
+
+	a:before {
+		padding: rem-calc(10);
+		border-radius: $border-radius;
+		color: white;
+	}
+
+	a:hover {
+		padding: unset;
+	}
+
+	&__post:before {
+		content: "Entrada";
+		background-color: $primary-color;
+	}
+
+	&__porfolio:before {
+		content: "Porfolio";
+		background-color: $medium-grey;
+	}
+
+	&__page:before {
+		content: "Página";
+		background-color: $dark-grey;
+	}
+
+	&__atachment:before {
+		content: "Imagen";
+		background-color: black;
+	}
+}

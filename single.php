@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <?php
-$layout = jjlazo_meta(get_the_ID(), '_jjlazo_post_layout', 'full');
+$layout = jjlazo_meta(get_the_ID(), '_jjlazo_post_layout', 'sidebar');
 $sidebar = is_active_sidebar('primary-sidebar');
 if ($layout === 'sidebar' && !$sidebar) {
 	$layout = 'full';

@@ -38,7 +38,7 @@ a {
 	cursor: pointer;
 	border-bottom: none;
 	text-decoration: none;
-	color: $primary-colour;
+	color: $primary-color;
 	word-break: break-word;
 
 	&:visited,
@@ -47,13 +47,14 @@ a {
 	}
 
 	&:hover {
-		background-color: $primary-colour-dim;
+		background-color: $primary-color-dim;
 		border-radius: $border-radius;
-		color: $light-grey;
+		color: $medium-grey;
+		padding: rem-calc(2) rem-calc(5);
 	}
 
 	&:active {
-		color: $primary-colour;
+		color: $primary-color;
 	}
 }
 
@@ -89,7 +90,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: $body-font-family;
+	font-family: $header-font-family;
 	font-style: $header-font-style;
 	font-weight: $header-font-weight;
 	color: $header-color;
@@ -106,6 +107,7 @@ h6 {
 	a {
 		&:hover {
 			background-color: transparent;
+			padding: unset;
 		}
 	}
 }

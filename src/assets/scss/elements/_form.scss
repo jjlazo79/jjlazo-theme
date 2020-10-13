@@ -27,14 +27,20 @@ input[type=submit] {
 	background: transparent;
 	line-height: 1;
 	cursor: pointer;
-	background-color: $primary-colour;
+	background-color: $primary-color;
 	color: #fff;
 	padding: rem-calc(10 15);
 	font-weight: 600;
 
 	&:focus,
 	&:hover {
-		background-color: $primary-colour-dim;
+		background-color: $primary-color-dim;
+	}
+}
+
+.wp-block-button__link {
+	&:hover {
+		padding: 12px 24px;
 	}
 }
 

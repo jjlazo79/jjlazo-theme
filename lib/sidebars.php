@@ -5,7 +5,25 @@ function jjlazo_sidebar_widgets()
 	register_sidebar(array(
 		'id' => 'primary-sidebar',
 		'name' => esc_html__('Primary Sidebar', 'jjlazo'),
+		'description' => esc_html__('This sidebar appears in the single posts page.', 'jjlazo'),
+		'before_widget' => '<section id="%1$s" class="c-sidebar-widget u-margin-bottom-20 %2$s">',
+		'after_widget' => '</section>',
+		'before_title' => '<h5>',
+		'after_title' => '</h5>'
+	));
+	register_sidebar(array(
+		'id' => 'archive-sidebar',
+		'name' => esc_html__('Archive Sidebar', 'jjlazo'),
 		'description' => esc_html__('This sidebar appears in the blog posts page.', 'jjlazo'),
+		'before_widget' => '<section id="%1$s" class="c-sidebar-widget u-margin-bottom-20 %2$s">',
+		'after_widget' => '</section>',
+		'before_title' => '<h5>',
+		'after_title' => '</h5>'
+	));
+	register_sidebar(array(
+		'id' => 'contact-sidebar',
+		'name' => esc_html__('Contact Sidebar', 'jjlazo'),
+		'description' => esc_html__('This sidebar appears in the contact page.', 'jjlazo'),
 		'before_widget' => '<section id="%1$s" class="c-sidebar-widget u-margin-bottom-20 %2$s">',
 		'after_widget' => '</section>',
 		'before_title' => '<h5>',
@@ -37,3 +55,6 @@ foreach ($columns as $i => $column) {
 }
 
 add_action('widgets_init', 'jjlazo_sidebar_widgets');
+
+//Shortodes en widgets de texto
+add_filter('widget_text', 'do_shortcode');

@@ -1,13 +1,13 @@
 .c-search-form {
-    position: relative;
-    padding-right: 44px;
-    &__label {
-        margin-bottom: 0;
-    }
-    &__button {
-        position: absolute;
-        right: 0;
-        top: 0;
-        height: 40px;
-    }
+	position: relative;
+	display: flex;
+	padding-right: 44px;
+
+	&__label {
+		margin-bottom: 0;
+	}
+
+	&__button {
+		margin-left: rem-calc(10);
+	}
 }

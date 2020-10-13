@@ -1,10 +1,11 @@
 .theme-mode {
 	background: none;
+	color: $primary-color;
 
 	&:hover,
 	&:focus {
 		background: none;
-		color: $hover-menu;
+		color: $primary-color-dim;
 	}
 
 	.fa-sun {

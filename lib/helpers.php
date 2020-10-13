@@ -54,3 +54,16 @@ function jjlazo_meta($id, $key, $default)
 	}
 	return $value;
 }
+
+function is_page_for_posts()
+{
+	$result = false;
+
+	if (is_home() && !is_front_page()) {
+		$page = get_queried_object();
+
+		$result = !is_null($page) && $page->ID == get_option('page_for_posts');
+	}
+
+	return $result;
+}

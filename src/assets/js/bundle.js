@@ -1,5 +1,6 @@
 import $ from "jquery";
 import "./components/switch";
+import "./components/isotope";
 import "./components/slider";
 import "./components/navigation";
 import "slick-carousel";

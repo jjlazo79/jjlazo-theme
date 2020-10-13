@@ -10,12 +10,12 @@
 				</h1>
 			</header>
 		</div>
-		<div class="o-row__column o-row__column--span-12 o-row__column--span-<?php echo is_active_sidebar('primary-sidebar') ? '8' : '12'; ?>@medium">
+		<div class="o-row__column o-row__column--span-12 o-row__column--span-<?php echo is_active_sidebar('archive-sidebar') ? '8' : '12'; ?>@medium">
 			<main role="main">
 				<?php get_template_part('loop', 'search'); ?>
 			</main>
 		</div>
-		<?php if (is_active_sidebar('primary-sidebar')) { ?>
+		<?php if (is_active_sidebar('archive-sidebar')) { ?>
 			<div class="o-row__column o-row__column--span-12 o-row__column--span-4@medium">
 				<?php get_sidebar(); ?>
 			</div>

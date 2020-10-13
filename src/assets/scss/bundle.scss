@@ -1,5 +1,5 @@
 @import './settings/global';
-@import './settings/colours';
+@import './settings/colors';
 @import './settings/break-points';
 @import './settings/typography';
 
@@ -14,11 +14,15 @@
 @import './elements/general';
 @import './elements/typography';
 @import './elements/form';
+@import './elements/modal';
 @import './elements/print';
+
 $fa-font-path: '../../../node_modules/@fortawesome/fontawesome-free/webfonts';
-@import '../../../node_modules/@fortawesome/fontawesome-free/scss/fa-solid.scss';
-@import '../../../node_modules/@fortawesome/fontawesome-free/scss/fa-regular.scss';
+@import '../../../node_modules/@fortawesome/fontawesome-free/scss/solid';
+@import '../../../node_modules/@fortawesome/fontawesome-free/scss/regular';
 @import '../../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome';
+@import '../../../node_modules/@fortawesome/fontawesome-free/scss/brands';
+@import '../../../node_modules/@fortawesome/fontawesome-free/scss/v4-shims';
 
 @import '../../../node_modules/slick-carousel/slick/slick.scss';
 
@@ -27,11 +31,13 @@ $fa-font-path: '../../../node_modules/@fortawesome/fontawesome-free/webfonts';
 
 @import './components/post';
 @import './components/page';
+@import './components/portfolio';
 @import './components/widget';
 @import './components/footer';
 @import './components/header';
 @import './components/comment';
 @import './components/search-form';
+@import './components/search-result';
 @import './components/switchers';
 @import './components/nav-links';
 

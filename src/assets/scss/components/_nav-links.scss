@@ -8,12 +8,13 @@
 		border-bottom: none;
 		color: $dark-grey;
 		display: inline-block;
-		background-color: #fafafa;
-		border: 2px solid #e2e2e2;
+		background-color: #ffffff;
+		border: 1px solid $grey;
+		border-radius: $border-radius;
 	}
 
 	a:hover {
-		background-color: $primary-colour;
+		background-color: $primary-color;
 		color: #fff;
 	}
 
@@ -25,15 +26,12 @@
 
 .c-post-navigation {
 	$p: &;
-	box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.05);
-
-	&__links {
-		display: flex;
-	}
+	box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.15);
+	border-radius: $border-radius;
 
 	&__post {
 		flex: 1;
-		max-width: 50%;
+		// max-width: 50%;
 
 		&--next {
 			#{$p}__thumbnail {
@@ -86,6 +84,7 @@
 		border: 1px solid $grey !important;
 		padding: rem-calc(20);
 		overflow: hidden;
+		border-radius: $border-radius;
 	}
 
 	&__thumbnail {

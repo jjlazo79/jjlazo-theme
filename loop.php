@@ -1,10 +1,14 @@
-<?php if (have_posts()) { ?>
-    <?php while (have_posts()) { ?>
-        <?php the_post(); ?>
-        <?php get_template_part('template-parts/post/content', get_post_format()); ?>
-    <?php } ?>
-    <?php the_posts_pagination(); ?>
-    <?php do_action('jjlazo_after_pagination'); ?>
-<?php } else { ?>
-    <?php get_template_part('template-parts/post/content', 'none'); ?>
-<?php } ?>
+<?php if (have_posts()) {
+	while (have_posts()) {
+		the_post();
+		if (!is_search()) {
+			get_template_part('template-parts/post/content', get_post_format());
+		} else {
+			get_template_part('template-parts/post/content-search');
+		}
+	}
+	the_posts_pagination();
+	do_action('jjlazo_after_pagination');
+} else {
+	get_template_part('template-parts/post/content', 'none');
+}

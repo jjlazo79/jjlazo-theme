@@ -23,15 +23,26 @@ img {
 }
 
 :focus {
-	outline: 2px solid $primary-colour;
+	outline: 2px solid $primary-color;
+}
+
+:hover {
+	transition: all $base-duration;
 }
 
 ::selection {
-	background: $primary-colour;
+	background: $primary-color;
 	color: #ffffff;
 }
 
 ::-moz-selection {
-	background: $primary-colour;
+	background: $primary-color;
 	color: #ffffff;
+}
+
+.c-post__content .hcb_wrap pre.prism,
+.c-post__content .hcb_wrap pre.prism code {
+	color: #f7f6f6;
+	text-shadow: none;
+	background: #1f1e1e;
 }

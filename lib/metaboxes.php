@@ -10,10 +10,24 @@ function jjlazo_add_meta_box()
 		'normal',
 		'default'
 	);
-}
 
+	add_meta_box(
+		'jjlazo_portfolio_metabox',
+		'Portfolio gallery',
+		'jjlazo_portfolio_metabox_html',
+		'portfolio',
+		'normal',
+		'default'
+	);
+}
 add_action('add_meta_boxes', 'jjlazo_add_meta_box');
 
+/**
+ * Post metabox
+ *
+ * @param obj $post
+ * @return void
+ */
 function jjlazo_post_metabox_html($post)
 {
 	$subtitle = get_post_meta($post->ID, '_jjlazo_post_subtitle', true);
@@ -31,6 +45,25 @@ function jjlazo_post_metabox_html($post)
 			<option <?php selected($layout, 'full'); ?> value="full"><?php esc_html_e('Full Width', 'jjlazo'); ?></option>
 			<option <?php selected($layout, 'sidebar'); ?> value="sidebar"><?php esc_html_e('Post With Sidebar', 'jjlazo'); ?></option>
 		</select>
+	</p>
+<?php
+}
+
+/**
+ * Portfolio metabox
+ *
+ * @param obj $post
+ * @return void
+ */
+function jjlazo_portfolio_metabox_html($post)
+{
+	$gallery = get_post_meta($post->ID, '_jjlazo_portfolio_gallery', true);
+	wp_nonce_field('jjlazo_update_portfolio_metabox', 'jjlazo_update_portfolio_nonce');
+?>
+	<p>
+		<label for="jjlazo_portfolio_metabox_html"><?php esc_html_e('Portfolio gallery', 'jjlazo'); ?></label>
+		<br />
+		<input class="widefat" type="text" name="jjlazo_portfolio_subtitle_field" id="jjlazo_portfolio_metabox_html" value="<?php echo esc_attr($gallery); ?>" />
 	</p>
 <?php
 }

@@ -2,7 +2,14 @@
 	font-weight: 600;
 	padding: rem-calc(15px 20px);
 	display: block;
-	color: #fff;
-	border-left: 1px solid #222;
+	// border-left: 1px solid #222;
 	font-size: rem-calc(14px);
+}
+
+@mixin box-shadow {
+	background-color: white;
+	border: 1px solid $grey;
+	border-radius: $border-radius;
+	box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.15);
+	padding: rem-calc(20);
 }

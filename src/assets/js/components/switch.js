@@ -1,10 +1,29 @@
-import $ from 'jquery';
+let darkMode = localStorage.getItem('darkMode');
+const darkModeToggle = document.querySelector('#dark-mode-toggle');
 
-$('.theme-mode').on('click', (e) => {
-	e.preventDefault();
-	e.stopPropagation();
-	console.log('dark theme');
-	var element = document.getElementsByTagName("BODY")[0];
-	element.classList.toggle("dark");
+const enableDarkMode = () => {
+	document.body.classList.add('dark');
+	localStorage.setItem('darkMode', 'enabled');
+}
+
+const disableDarkMode = () => {
+	document.body.classList.remove('dark');
+	localStorage.setItem('darkMode', null);
+}
+
+if (darkMode == 'enabled') {
+	enableDarkMode();
+}
+
+darkModeToggle.addEventListener("click", () => {
+	darkMode = localStorage.getItem('darkMode');
+	if (darkMode !== 'enabled') {
+		enableDarkMode();
+		console.log('enable darkMode');
+	} else {
+		disableDarkMode();
+		console.log('disable darkMode');
+
+	}
 });
 
