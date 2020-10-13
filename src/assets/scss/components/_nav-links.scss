@@ -26,12 +26,10 @@
 
 .c-post-navigation {
 	$p: &;
-	box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.15);
-	border-radius: $border-radius;
 
 	&__post {
 		flex: 1;
-		// max-width: 50%;
+		margin: rem-calc(20) auto;
 
 		&--next {
 			#{$p}__thumbnail {
@@ -41,7 +39,9 @@
 
 			#{$p}__link {
 				justify-content: flex-end;
-				border-left: none !important;
+				border-right: none !important;
+				border-top-right-radius: 0;
+				border-bottom-right-radius: 0;
 			}
 
 			#{$p}__content {
@@ -56,6 +56,9 @@
 
 			#{$p}__link {
 				justify-content: flex-start;
+				border-left: none !important;
+				border-top-left-radius: 0;
+				border-bottom-left-radius: 0;
 			}
 		}
 	}
@@ -80,12 +83,16 @@
 	&__link {
 		display: flex;
 		height: 100%;
-		background-color: #ffffff;
 		border: 1px solid $grey !important;
 		padding: rem-calc(20);
 		overflow: hidden;
 		border-radius: $border-radius;
+
+		&:hover {
+			padding: rem-calc(20);
+		}
 	}
+
 
 	&__thumbnail {
 		width: 100px;

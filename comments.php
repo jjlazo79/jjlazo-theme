@@ -26,10 +26,9 @@ if (post_password_required()) {
 		<ul class="c-comments__list">
 			<?php
 			wp_list_comments(array(
-				'short_ping' => false,
+				'short_ping'  => false,
 				'avatar_size' => 50,
-				'reply_text' => 'hello',
-				'callback' => 'jjlazo_comment_callback'
+				'callback'    => 'jjlazo_comment_callback'
 			));
 			?>
 		</ul>

@@ -25,15 +25,12 @@ function jjlazo_comment_callback($comment, $args, $depth)
 
 				<?php if ($comment->comment_approved == '0') { ?>
 					<p class="c-comment__awaiting-moderation"><?php esc_html_e('Your comment is awaiting moderation.', 'jjlazo'); ?></p>
-				<?php } ?>
+				<?php }
 
-				<?php
-				if ($comment->comment_type == '' || (($comment->comment_type == 'pingback' || $comment->comment_type == 'trackback') && !$args['short_ping'])) {
-					comment_text();
+				if ('' !== $comment->comment_type && 'trackback' !== $comment->comment_type && 'pingback' !== $comment->comment_type) {
+					echo comment_text();
 				}
-				?>
 
-				<?php
 				comment_reply_link(array_merge($args, array(
 					'depth' => $depth,
 					'add_below' => 'div-comment',

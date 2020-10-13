@@ -6,7 +6,10 @@
 		background-color: $bg-box-dark-theme;
 	}
 
-	.c-page {
+	.c-page,
+	.c-post-author,
+	.c-comment,
+	.c-post-navigation__link {
 		background-color: $bg-box-dark-theme;
 		border: none;
 		box-shadow: none;
@@ -30,7 +33,12 @@
 	.c-post__title,
 	.c-post__title>a,
 	.c-post__meta,
-	.c-post__excerpt {
+	.c-post__excerpt,
+	.c-post-author__desc,
+	.c-post-navigation__title,
+	.c-post-navigation__subtitle,
+	.c-comment__author,
+	.c-comment__content p {
 		color: $titles-dark-theme;
 	}
 
@@ -60,7 +68,8 @@
 	}
 
 	input,
-	textarea {
+	textarea,
+	code {
 		background-color: #24292e;
 		color: white;
 	}
