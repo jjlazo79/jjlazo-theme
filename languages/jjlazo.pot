@@ -1,4 +1,4 @@
-# Copyright (C) 2018 jjlazo
+# Copyright (C) 2020 jjlazo
 # This file is distributed under the same license as the jjlazo package.
 msgid ""
 msgstr ""
@@ -17,12 +17,12 @@ msgstr ""
 msgid "Nothing found here, maybe you can try to search?"
 msgstr ""
 
-#: archive-jjlazo_portfolio.php:12, taxonomy-jjlazo_project_type.php:12, taxonomy-jjlazo_skills.php:12, template-parts/post/content-none.php:1
+#: archive-porfolio.php:72, taxonomy-project_type.php:13, taxonomy-skills.php:13, template-parts/post/content-none.php:1
 msgid "Sorry, no posts matched your criteria."
 msgstr ""
 
 #. translators: %s is the number of posts
-#: author.php:19, template-parts/single/author.php:27
+#: author.php:21, template-parts/single/author.php:27
 msgid "%s post"
 msgid_plural "%s posts"
 msgstr[0] ""
@@ -35,16 +35,234 @@ msgid_plural "%1$s Replies to \"%2$s\""
 msgstr[0] ""
 msgstr[1] ""
 
-#: comments.php:41
+#: comments.php:40
 msgid "Comments are closed for this post"
 msgstr ""
 
-#: header.php:10
+#: header.php:12
 msgid "Skip to content"
 msgstr ""
 
-#: header.php:26
+#: header.php:25, header.php:39
 msgid "Main Navigation"
+msgstr ""
+
+#: header.php:44
+msgid "Change dark mode"
+msgstr ""
+
+#: header.php:45
+msgid "Change ligth mode"
+msgstr ""
+
+#: lib/comment-callback.php:10
+msgid "Edit Comment"
+msgstr ""
+
+#: lib/comment-callback.php:21
+msgid "%s ago"
+msgstr ""
+
+#: lib/comment-callback.php:27
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: lib/customize.php:20
+msgid "Single Blog Options"
+msgstr ""
+
+#: lib/customize.php:21
+msgid "You can change single blog options from here."
+msgstr ""
+
+#: lib/customize.php:33
+msgid "Show Author Info"
+msgstr ""
+
+#: lib/customize.php:52
+msgid "General Options"
+msgstr ""
+
+#: lib/customize.php:53
+msgid "You can change general options from here."
+msgstr ""
+
+#: lib/customize.php:63
+msgid "Accent Color"
+msgstr ""
+
+#: lib/customize.php:75
+msgid "Portfolio Slug"
+msgstr ""
+
+#: lib/customize.php:76
+msgid "Will appear in the archive url"
+msgstr ""
+
+#: lib/customize.php:93
+msgid "Footer Options"
+msgstr ""
+
+#: lib/customize.php:94
+msgid "You can change footer options from here."
+msgstr ""
+
+#: lib/customize.php:105
+msgid "Site Info"
+msgstr ""
+
+#: lib/customize.php:117
+msgid "Footer Background"
+msgstr ""
+
+#: lib/customize.php:119
+msgid "Light"
+msgstr ""
+
+#: lib/customize.php:120
+msgid "Dark"
+msgstr ""
+
+#: lib/customize.php:134
+msgid "Footer Layout"
+msgstr ""
+
+#: lib/customize.php:144
+msgid "Footer layout is invalid"
+msgstr ""
+
+#. translators: %s: Post Date
+#: lib/helpers.php:8
+msgid "Posted on %s"
+msgstr ""
+
+#. translators: %s: Post Author
+#: lib/helpers.php:13
+msgid " By %s"
+msgstr ""
+
+#: lib/helpers.php:25
+msgid "Read More <span class=\"u-screen-reader-text\">About %s</span>"
+msgstr ""
+
+#: lib/helpers.php:45
+msgid "Delete Post"
+msgstr ""
+
+#: lib/metaboxes.php:38
+msgid "Post Subtitle"
+msgstr ""
+
+#: lib/metaboxes.php:43
+msgid "Layout"
+msgstr ""
+
+#: lib/metaboxes.php:45
+msgid "Full Width"
+msgstr ""
+
+#: lib/metaboxes.php:46
+msgid "Post With Sidebar"
+msgstr ""
+
+#: lib/metaboxes.php:64
+msgid "Portfolio gallery"
+msgstr ""
+
+#: lib/most-recent-widget.php:19
+msgid "Recent Posts"
+msgstr ""
+
+#: lib/most-recent-widget.php:21
+msgid "some description"
+msgstr ""
+
+#: lib/most-recent-widget.php:55
+msgid "Title:"
+msgstr ""
+
+#: lib/most-recent-widget.php:59
+msgid "Number Of Posts:"
+msgstr ""
+
+#: lib/most-recent-widget.php:64
+msgid "Include Date?"
+msgstr ""
+
+#: lib/most-recent-widget.php:67
+msgid "Sort By:"
+msgstr ""
+
+#: lib/most-recent-widget.php:69
+msgid "Most Recent"
+msgstr ""
+
+#: lib/most-recent-widget.php:70
+msgid "Random"
+msgstr ""
+
+#: lib/most-recent-widget.php:71
+msgid "Number Of Comments"
+msgstr ""
+
+#: lib/navigation.php:6
+msgid "Main Menu"
+msgstr ""
+
+#: lib/navigation.php:7
+msgid "Footer Menu"
+msgstr ""
+
+#: lib/navigation.php:27
+msgid "Show %s submenu"
+msgstr ""
+
+#: lib/navigation.php:28
+msgid "Hide %s submenu"
+msgstr ""
+
+#: lib/sidebars.php:7
+msgid "Primary Sidebar"
+msgstr ""
+
+#: lib/sidebars.php:8
+msgid "This sidebar appears in the single posts page."
+msgstr ""
+
+#: lib/sidebars.php:16
+msgid "Archive Sidebar"
+msgstr ""
+
+#: lib/sidebars.php:17
+msgid "This sidebar appears in the blog posts page."
+msgstr ""
+
+#: lib/sidebars.php:25
+msgid "Contact Sidebar"
+msgstr ""
+
+#: lib/sidebars.php:26
+msgid "This sidebar appears in the contact page."
+msgstr ""
+
+#: lib/sidebars.php:48
+msgid "Footer Widgets Column %s"
+msgstr ""
+
+#: lib/sidebars.php:49
+msgid "Footer widgets"
+msgstr ""
+
+#: page-templates/front-page.php:3
+msgid "Front Page"
+msgstr ""
+
+#: page-templates/page-blank.php:3
+msgid "Blank"
+msgstr ""
+
+#: page-templates/page-full.php:3
+msgid "Full Width Page"
 msgstr ""
 
 #: search.php:8
@@ -66,190 +284,48 @@ msgctxt "submit button"
 msgid "Search"
 msgstr ""
 
-#: lib/comment-callback.php:9
-msgid "Edit Comment"
+#: single-porfolio.php:5
+msgid "Read more"
 msgstr ""
 
-#: lib/comment-callback.php:20
-msgid "%s ago"
+#: template-parts/porfolio/aside.php:6
+msgid "Project description"
 msgstr ""
 
-#: lib/comment-callback.php:26
-msgid "Your comment is awaiting moderation."
+#: template-parts/porfolio/aside.php:15
+msgid "Project details"
 msgstr ""
 
-#: lib/customize.php:19
-msgid "Single Blog Options"
+#: template-parts/porfolio/aside.php:17
+msgid "Client:"
 msgstr ""
 
-#: lib/customize.php:20
-msgid "You can change single blog options from here."
+#: template-parts/porfolio/aside.php:21
+msgid "Date:"
 msgstr ""
 
-#: lib/customize.php:32
-msgid "Show Author Info"
+#: template-parts/porfolio/aside.php:26
+msgid "Categorie:"
 msgstr ""
 
-#: lib/customize.php:49
-msgid "General Options"
+#: template-parts/porfolio/aside.php:38
+msgid "Project skills"
 msgstr ""
 
-#: lib/customize.php:50
-msgid "You can change general options from here."
+#: template-parts/porfolio/aside.php:50
+msgid "Go project"
 msgstr ""
 
-#: lib/customize.php:60
-msgid "Accent Color"
+#: template-parts/porfolio/navigation.php:9, template-parts/single/navigation.php:8
+msgid "Post Navigation"
 msgstr ""
 
-#: lib/customize.php:72
-msgid "Portfolio Slug"
+#: template-parts/porfolio/navigation.php:23
+msgid "Previous project"
 msgstr ""
 
-#: lib/customize.php:73
-msgid "Will appear in the archive url"
-msgstr ""
-
-#: lib/customize.php:90
-msgid "Footer Options"
-msgstr ""
-
-#: lib/customize.php:91
-msgid "You can change footer options from here."
-msgstr ""
-
-#: lib/customize.php:102
-msgid "Site Info"
-msgstr ""
-
-#: lib/customize.php:114
-msgid "Footer Background"
-msgstr ""
-
-#: lib/customize.php:116
-msgid "Light"
-msgstr ""
-
-#: lib/customize.php:117
-msgid "Dark"
-msgstr ""
-
-#: lib/customize.php:131
-msgid "Footer Layout"
-msgstr ""
-
-#: lib/customize.php:141
-msgid "Footer layout is invalid"
-msgstr ""
-
-#. translators: %s: Post Date
-#: lib/helpers.php:7
-msgid "Posted on %s"
-msgstr ""
-
-#. translators: %s: Post Author
-#: lib/helpers.php:12
-msgid " By %s"
-msgstr ""
-
-#: lib/helpers.php:23
-msgid "Read More <span class=\"u-screen-reader-text\">About %s</span>"
-msgstr ""
-
-#: lib/helpers.php:42
-msgid "Delete Post"
-msgstr ""
-
-#: lib/metaboxes.php:21
-msgid "Post Subtitle"
-msgstr ""
-
-#: lib/metaboxes.php:26
-msgid "Layout"
-msgstr ""
-
-#: lib/metaboxes.php:28
-msgid "Full Width"
-msgstr ""
-
-#: lib/metaboxes.php:29
-msgid "Post With Sidebar"
-msgstr ""
-
-#: lib/most-recent-widget.php:16
-msgid "Recent Posts"
-msgstr ""
-
-#: lib/most-recent-widget.php:18
-msgid "some description"
-msgstr ""
-
-#: lib/most-recent-widget.php:51
-msgid "Title:"
-msgstr ""
-
-#: lib/most-recent-widget.php:55
-msgid "Number Of Posts:"
-msgstr ""
-
-#: lib/most-recent-widget.php:60
-msgid "Include Date?"
-msgstr ""
-
-#: lib/most-recent-widget.php:63
-msgid "Sort By:"
-msgstr ""
-
-#: lib/most-recent-widget.php:65
-msgid "Most Recent"
-msgstr ""
-
-#: lib/most-recent-widget.php:66
-msgid "Random"
-msgstr ""
-
-#: lib/most-recent-widget.php:67
-msgid "Number Of Comments"
-msgstr ""
-
-#: lib/navigation.php:5
-msgid "Main Menu"
-msgstr ""
-
-#: lib/navigation.php:6
-msgid "Footer Menu"
-msgstr ""
-
-#: lib/navigation.php:24
-msgid "Show %s submenu"
-msgstr ""
-
-#: lib/navigation.php:25
-msgid "Hide %s submenu"
-msgstr ""
-
-#: lib/sidebars.php:6
-msgid "Primary Sidebar"
-msgstr ""
-
-#: lib/sidebars.php:7
-msgid "This sidebar appears in the blog posts page."
-msgstr ""
-
-#: lib/sidebars.php:29
-msgid "Footer Widgets Column %s"
-msgstr ""
-
-#: lib/sidebars.php:30
-msgid "Footer widgets"
-msgstr ""
-
-#: page-templates/page-blank.php:3, packaged/jjlazo/page-templates/page-blank.php:3
-msgid "Blank"
-msgstr ""
-
-#: page-templates/page-full.php:3, packaged/jjlazo/page-templates/page-full.php:3
-msgid "Full Width Page"
+#: template-parts/porfolio/navigation.php:46
+msgid "Next project"
 msgstr ""
 
 #. translators: used betweeen categories
@@ -264,10 +340,6 @@ msgstr ""
 
 #: template-parts/single/author.php:2
 msgid "About The Author"
-msgstr ""
-
-#: template-parts/single/navigation.php:8
-msgid "Post Navigation"
 msgstr ""
 
 #: template-parts/single/navigation.php:20
