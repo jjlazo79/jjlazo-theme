@@ -21,10 +21,10 @@ const PRODUCTION = yargs.argv.prod;
 const paths = {
   rename: {
     src: [
-      "archive-jjlazo_portfolio.php",
-      "single-jjlazo_portfolio.php",
-      "taxonomy-jjlazo_skills.php",
-      "taxonomy-jjlazo_project_type.php"
+      "archive-porfolio.php",
+      "single-porfolio.php",
+      "porfolio_skill.php",
+      "porfolio_category.php"
     ]
   },
   styles: {
@@ -50,8 +50,8 @@ const paths = {
   plugins: {
     src: [
       "../../plugins/jjlazo-metaboxes/packaged/*",
-      "../../plugins/jjlazo-shortcodes/packaged/*",
-      "../../plugins/jjlazo-post-types/packaged/*"
+    //   "../../plugins/jjlazo-shortcodes/packaged/*",
+      "../../plugins/jjlazo-post_types/packaged/*"
     ],
     dest: ["lib/plugins"]
   },
@@ -75,10 +75,10 @@ const paths = {
       "!gulpfile.babel.js",
       "!package.json",
       "!package-lock.json",
-      "!archive-jjlazo_portfolio.php",
-      "!single-jjlazo_portfolio.php",
-      "!taxonomy-jjlazo_skills.php",
-      "!taxonomy-jjlazo_project_type.php"
+      "!archive-porfolio.php",
+      "!single-porfolio.php",
+      "!porfolio_skill.php",
+      "!porfolio_category.php"
     ],
     dest: "packaged"
   }

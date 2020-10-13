@@ -17,10 +17,6 @@ msgstr ""
 msgid "Nothing found here, maybe you can try to search?"
 msgstr ""
 
-#: archive-porfolio.php:72, taxonomy-project_type.php:13, taxonomy-skills.php:13, template-parts/post/content-none.php:1
-msgid "Sorry, no posts matched your criteria."
-msgstr ""
-
 #. translators: %s is the number of posts
 #: author.php:21, template-parts/single/author.php:27
 msgid "%s post"
@@ -284,10 +280,6 @@ msgctxt "submit button"
 msgid "Search"
 msgstr ""
 
-#: single-porfolio.php:5
-msgid "Read more"
-msgstr ""
-
 #: template-parts/porfolio/aside.php:6
 msgid "Project description"
 msgstr ""
@@ -326,6 +318,10 @@ msgstr ""
 
 #: template-parts/porfolio/navigation.php:46
 msgid "Next project"
+msgstr ""
+
+#: template-parts/post/content-none.php:1
+msgid "Sorry, no posts matched your criteria."
 msgstr ""
 
 #. translators: used betweeen categories
