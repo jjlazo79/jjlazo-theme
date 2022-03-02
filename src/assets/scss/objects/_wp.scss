@@ -142,3 +142,145 @@ a img.aligncenter {
 .grecaptcha-badge {
 	visibility: hidden;
 }
+
+.user-badges li {
+	border-bottom: none;
+	box-sizing: border-box;
+	display: inline-block;
+	font-size: 16px;
+	padding: 16px 0 16px 55px;
+	position: relative
+}
+
+.user-badges li div.dashicons:before {
+	position: relative;
+	top: 2px;
+	font-size: 24px
+}
+
+.user-badges li div.dashicons.dashicons-admin-appearance:before,
+.user-badges li div.dashicons.dashicons-admin-plugins:before,
+.user-badges li div.dashicons.dashicons-art:before,
+.user-badges li div.dashicons.dashicons-format-chat:before,
+.user-badges li div.dashicons.dashicons-tickets:before {
+	left: 1px
+}
+
+.user-badges li div.dashicons.dashicons-cloud:before {
+	top: 0
+}
+
+.badge {
+	margin: 4px;
+	width: 32px;
+	height: 32px;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	box-sizing: border-box;
+	position: absolute;
+	top: 8px;
+	left: 0
+}
+
+.badge-themes-reviewer {
+	background: rgba(78, 50, 136, .25);
+	box-shadow: 0 0 0 4px #4e3288
+}
+
+.badge-themes-reviewer:before {
+	color: #4e3288
+}
+
+.badge-themes {
+	background: #fff;
+	box-shadow: 0 0 0 4px #4e3288
+}
+
+.badge-themes:before {
+	color: #4e3288
+}
+
+.badge-plugins-reviewer {
+	background: rgba(240, 103, 35, .25);
+	box-shadow: 0 0 0 4px #f06723
+}
+
+.badge-plugins-reviewer:before {
+	color: #f06723
+}
+
+.badge-plugins {
+	background: #fff;
+	box-shadow: 0 0 0 4px #f06723
+}
+
+.badge-plugins:before {
+	color: #f06723
+}
+
+.badge-support {
+	background: rgba(51, 180, 206, .25);
+	box-shadow: 0 0 0 4px #33b4ce
+}
+
+.badge-support:before {
+	color: #33b4ce
+}
+
+.badge-support-contributor {
+	background: #fff;
+	box-shadow: 0 0 0 4px #33b4ce
+}
+
+.badge-support-contributor:before {
+	color: #33b4ce
+}
+
+.badge-wordpress-tv {
+	background: rgba(115, 173, 48, .25);
+	box-shadow: 0 0 0 4px #73ad30
+}
+
+.badge-wordpress-tv:before {
+	color: #73ad30
+}
+
+.badge-wordpress-tv-contributor {
+	background: #fff;
+	box-shadow: 0 0 0 4px #73ad30
+}
+
+.badge-wordpress-tv-contributor:before {
+	color: #73ad30
+}
+
+.badge-organizer {
+	background: #fff;
+	box-shadow: 0 0 0 4px #f7ad43
+}
+
+.badge-organizer:before {
+	color: #f7ad43
+}
+
+.badge-speaker {
+	background: #fff;
+	box-shadow: 0 0 0 4px #f7ad43
+}
+
+.badge-speaker:before {
+	color: #f7ad43
+}
+
+.badge-translation-editor:before {
+	color: #c32283
+}
+
+.badge-translation-contributor {
+	background: #fff;
+	box-shadow: 0 0 0 4px #c32283
+}
+
+.badge-translation-contributor:before {
+	color: #c32283
+}

@@ -23,7 +23,7 @@
 						<button class="button is-checked" data-filter="*">Todos</button>
 						<?php
 						$taxonomies = get_terms(array(
-							'taxonomy' => 'portfolio_category',
+							'taxonomy' => 'porfolio_category',
 							'hide_empty' => false,
 						));
 
@@ -42,7 +42,7 @@
 							the_post(); ?>
 
 							<?php
-							$term_obj_list = get_the_terms(get_the_ID(), 'portfolio_category');
+							$term_obj_list = get_the_terms(get_the_ID(), 'porfolio_category');
 							$terms_string  = join(', ', wp_list_pluck($term_obj_list, 'name'));
 							$terms_slugs   = join(' ', wp_list_pluck($term_obj_list, 'slug'));
 							?>

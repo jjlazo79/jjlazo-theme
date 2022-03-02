@@ -5,7 +5,7 @@
 $project_info['project_content'] = (($post->post_excerpt == '') || (is_single())) ? get_the_content(__("Read more", "jjlazo")) : get_the_excerpt();
 
 // skills ------------------------------------------
-$project_info['project_skills']  = wp_get_post_terms($post->ID, 'portfolio_skill');
+$project_info['project_skills']  = wp_get_post_terms($post->ID, 'porfolio_skill');
 
 // url ------------------------------------------
 $project_info['project_url']     = get_post_meta($post->ID, '_jjlazo_porfolio_details_project_url', true);

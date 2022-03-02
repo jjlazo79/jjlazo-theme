@@ -25,7 +25,7 @@
 			<div class="meta">
 				<label><?php esc_attr_e('Categorie:', 'jjlazo'); ?> </label>
 				<?php
-				$term_obj_list = get_the_terms(get_the_ID(), 'portfolio_category');
+				$term_obj_list = get_the_terms(get_the_ID(), 'porfolio_category');
 				$terms_string  = join(', ', wp_list_pluck($term_obj_list, 'name'));
 				echo $terms_string;
 				?>
